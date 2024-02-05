@@ -1,0 +1,37 @@
+.background-image {
+    background-image: url("images/background-image.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.aeroplane-button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.aeroplane-button span {
+    display: none;
+}
+.aeroplane-button:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("images/aeroplane-image.jpg") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+}
+.aeroplane-button:hover:before {
+    opacity: 0.8;
+}
+.aeroplane-button:active:before {
+    opacity: 0.6;
+}
